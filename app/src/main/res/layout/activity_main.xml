@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/bg"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Nama Pegawai"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/f"
+            android:id="@+id/txtnama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextName"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/txtnama"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posisi"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/editTextName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/txtposisi"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextDesg"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/txtposisi"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gajih"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/editTextDesg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/txtgajih"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextSalary"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/txtgajih"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:text="Tambah Pegawai"
+            android:fontFamily="@font/oswaldregular"
+            android:drawableLeft="@drawable/add"
+            android:backgroundTint="@color/d"
+            android:textSize="20dp"
+            android:id="@+id/buttonAdd"
+            app:layout_constraintTop_toBottomOf="@id/editTextSalary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:text="Daftar Pegawai"
+            android:drawableLeft="@drawable/view"
+            android:backgroundTint="@color/d"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:id="@+id/buttonView"
+            app:layout_constraintTop_toBottomOf="@id/buttonAdd"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:text="Main Menu"
+            android:drawableLeft="@drawable/mainmenu"
+            android:backgroundTint="@color/d"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:id="@+id/buttonMM"
+            app:layout_constraintTop_toBottomOf="@id/buttonView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

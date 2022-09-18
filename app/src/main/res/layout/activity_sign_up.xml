@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/bg"
+    tools:context=".SignUpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/signup"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/gm"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:text="Name"
+            android:textColor="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/gm"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/txtnama"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/d"
+            android:hint="Enter Your Name"
+            app:layout_constraintTop_toBottomOf="@id/txtnama"
+            android:id="@+id/etnama"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:text="ID"
+            android:textColor="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/etnama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/txtID"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/d"
+            android:hint="Enter Your ID"
+            app:layout_constraintTop_toBottomOf="@id/txtID"
+            android:id="@+id/etid"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:text="Email"
+            android:textColor="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/etid"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/txtemail"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/d"
+            android:hint="Enter Your Email"
+            app:layout_constraintTop_toBottomOf="@id/txtemail"
+            android:id="@+id/etemail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:text="Password"
+            android:textColor="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/etemail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/txtpass"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/d"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/txtpass"
+            android:id="@+id/etpass"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:text="Confirm Password"
+            android:textColor="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/etpass"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/txtcfpass"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/oswaldregular"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/d"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@id/txtcfpass"
+            android:id="@+id/etcfpass"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/oswaldregular"
+            android:text="SIGN UP"
+            android:backgroundTint="@color/f"
+            app:layout_constraintTop_toBottomOf="@id/etcfpass"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/btnsignup"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>
